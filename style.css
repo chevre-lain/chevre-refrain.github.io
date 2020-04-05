@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+body {
+    margin: 0!important;
+}
+header {
+    background-color: rgba(7, 5, 150, 0.8);
+    color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.container {
+    padding: 0 15px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+header a {
+    margin: 20px 5px;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+}
+header a:before{
+	content: "";
+	position: absolute;
+	 left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+header a:hover:before {
+	transform: scale(1);
+}
+header i {
+    font-size: 35px;
+
+}
+.right-header {
+    color: #ffffff;
+    display: none;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;    
+}
+.right-header li {
+    list-style: none;
+}
+.right-header a {
+    text-decoration: none;
+    font-size: 25px;
+}
+.hero-wrapper {
+    padding: 100px 0;
+    background: linear-gradient(rgba(7, 5, 150, 0.6), rgba(7, 5, 150, 0.6)),
+url(img/electric.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    height: 467px;
+}
+.logo-wrapper {
+    overflow: hidden;
+}
+.logo-wrapper {
+    display: block;
+    transition-duration: 0.3s;
+}
+.logo-wrapper img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.chevre_logo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 150px 0 10px;
+}
+.chevre_logo img {
+    border-radius: 100%;
+    border: 5px solid #8B929B;
+    width: 150px;
+    height: 150px;
+}
+.logo_letter {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    font-size: 35px;
+}
+span {
+    color: #ff8830;
+}
+.logo_letter span {
+    padding-left: 10px;
+}
+#profile {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+.profile-wrapper h2{
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+.profile-wrapper p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: normal;
+    padding: 0 10px 10px;
+    margin: 0;
+}
+.btn-wrapper {
+    text-align: center;
+}
+.profile-wrapper a {
+    color: #ff8830;
+    font-size: 35px;
+    padding: 20px 10px;
+}
+.footer-wrapper {
+    border-top: 1px solid #cccccc;
+    padding: 20px 0;
+}
+footer {
+    background-color: rgb(7, 5, 150);
+}
+.footer-wrapper p {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media(min-width: 670px) {
+header h1 {
+    font-size: 30px;
+}
+.logo {
+    padding-left: 5px;
+}
+header h1 br {
+        display: none;
+    }
+}
+@media(min-width: 1024px) {
+header h1 {
+    font-size: 40px;
+}
+header a {
+    margin: 10px 5px;
+}
+    .bar-icon {
+    display: none;
+}
+.right-header {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.flex li {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.flex li:not(:last-child) {
+    margin-right: 30px;
+}
+.hero-wrapper {
+    height: 790px;
+}
+.chevre_logo img {
+    width: 350px;
+    height: 350px;
+    border: 10px solid #8B929B;
+}
+.logo_letter {
+    font-size: 80px;
+    padding-top: 30px;
+}
+.profile-wrapper h2 {
+    font-size: 45px;
+} 
+.profile-wrapper p {
+    font-size: 25px;
+}
+.profile-wrapper a {
+    font-size: 60px;
+    padding: 20px;
+}
+}
